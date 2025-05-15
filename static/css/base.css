@@ -1,0 +1,107 @@
+/* ************************************************************************* */
+/* default fonts                                                             */
+/* ************************************************************************* */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/* ************************************************************************* */
+/* tags                                                                      */
+/* ************************************************************************* */
+
+body {
+    font-family: "Roboto", sans-serif
+}
+
+html {
+    background-color: dimgray;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ************************************************************************* */
+/* classes                                                                   */
+/* ************************************************************************* */
+
+.capitalise {
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
+
+.logo-div {
+    background-color: lightsalmon;
+    padding: 0;
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+/* ************************************************************************* */
+/* ids                                                                       */
+/* ************************************************************************* */
+
+#nav {
+    padding: 0;
+    margin: 0;
+}
+
+#nav-item-1 {
+    background-color: cyan;
+    height: 2rem;
+}
+
+#nav-item-1 a {
+    color: magenta;
+}
+
+#nav-item-2 {
+    background-color: yellow;
+    height: 2rem;
+}
+
+#nav-item-2 a {
+    color: black;
+}
+
+#nav-item-3 {
+    background-color: magenta;
+    height: 2rem;
+}
+
+#nav-item-3 a {
+    color: cyan;
+}
+
+#nav-item-4 {
+    background-color: black;
+    height: 2rem;
+}
+
+#nav-item-4 a {
+    color: yellow;
+}
+
+/* ************************************************************************* */
+/* @media queries */
+/* ************************************************************************* */
+
+/* This below media query applies styles for devices */
+/* with a maximum width of 600px such as mobile phones */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* This below media query applies styles for devices with a width */
+/* between 601px and 768px such as tablets in portrait mode */
+@media (max-width: 768px) {
+    body {
+        background-color: lightgreen;
+    }
+}
