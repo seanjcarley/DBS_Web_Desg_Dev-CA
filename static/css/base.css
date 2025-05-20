@@ -9,7 +9,7 @@
 /* ************************************************************************* */
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 body {
@@ -17,7 +17,10 @@ body {
 }
 
 footer {
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
+    object-fit: none;
+    position: fixed;
+    bottom: 0;
 }
 
 header {
@@ -26,10 +29,13 @@ header {
 
 html {
     background-color: dimgray;
+    height: 100%;
+    width: 100%;
 }
 
 section {
-    background-color: wheat
+    background-color: wheat;
+    min-height: 78vh;
 }
 
 /* ************************************************************************* */
@@ -47,9 +53,23 @@ section {
     text-align: center;
 }
 
+.footer-header {
+    text-align: center;
+    color: darkgray;
+    padding: 1rem;
+
+}
+
 .logo-div {
-    background-color: lightsalmon;
     padding: 0;
+    background-image: url("..\\media\\istockphoto-1141890853-612x612.jpg");
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    
 }
 
 .nav-item {
@@ -63,6 +83,7 @@ section {
 .social {
     text-align: center;
     margin-top: 0.8rem;
+    background-color: palevioletred;
 }
 
 .social-icons li a i{
@@ -90,6 +111,10 @@ section {
     display: block;
     width: 100%;
     font-size: 1rem;
+}
+
+.sr-only {
+    position:inherit !important;
 }
 
 .uppercase {
@@ -151,12 +176,29 @@ section {
     body {
         background-color: lightblue;
     }
+
+    section {
+        min-height:76vh;
+        background-color: red;
+    }
+
+    .logo-div {
+        display: none;
+    }
 }
 
 /* This below media query applies styles for devices with a width */
 /* between 601px and 768px such as tablets in portrait mode */
-@media (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 768px) {
     body {
         background-color: lightgreen;
     }
+    section {
+        min-height:76vh;
+        background-color: Blue;
+    }
 }
+
+/* This below media query applies styles for devices with a width */
+/* between 769px and 991px such as tablets in landscape mode */
+@media (min-width: 769px) and (max-width: 991px) {}
