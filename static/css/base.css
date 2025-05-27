@@ -14,66 +14,105 @@ a {
 
 body {
     font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
-    /* background-color: palevioletred; */
-    object-fit: none;
+    background-color: #DDB2B9;
+    max-height: 7.5rem;
     position: fixed;
     bottom: 0;
 }
 
 header {
-    background-color: bisque;
+    background-color: #C9D4EB;
+    flex: none;
 }
 
-html {
+html, body {
     background-color: dimgray;
     height: 100%;
     width: 100%;
 }
 
 section {
-    background-color: wheat;
-    min-height: 78vh;
+    background-color: #647491;
+    flex: auto;
 }
 
 /* ************************************************************************* */
 /* classes                                                                   */
 /* ************************************************************************* */
 
+.centre {
+    text-align: center;
+}
+
 .copyright {
-    color: darkgray;
+    color: #647491;
     font-weight: 300;
     text-align: center;
     padding-top: 1rem;
 }
 
-.center {
-    text-align: center;
+.container {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.container .content{
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.0);
+    color: #DDB2B9;
+    width: 100%;
+    padding: 1rem;
 }
 
 .footer-header {
     text-align: center;
-    color: darkgray;
+    color: #647491;
     padding: 1rem;
-
 }
 
-.logo-div {
-    padding: 0;
-    background-image: url("..\\media\\istockphoto-1141890853-612x612.jpg");
-    background-position: left top;
-    background-size: contain;
-    background-repeat: no-repeat;
+.image {
+    position: relative;
 }
 
-.heading {
-    
+.image page-content {
+    position: absolute;
+    top: 50;
+    bottom: auto;
+    background: rgba(0, 0, 0, 0.5);
+    color: #DDB2B9;
+}
+
+.navbar a {
+    color: #BA97A9;
+}
+
+.navbar a:hover {
+    color: #647491;
 }
 
 .nav-item {
     list-style-type: none;
+}
+
+.nav-text {
+    font-weight: 700;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: -99;
 }
 
 .row {
@@ -83,13 +122,12 @@ section {
 .social {
     text-align: center;
     margin-top: 0.8rem;
-    background-color: palevioletred;
 }
 
 .social-icons li a i{
-    background-color: darkgray;
+    background-color: #647491;
     border-radius: 50%;
-    color: white;
+    color: #DDB2B9;
     font-size: 1rem;
     height: 2rem;
     line-height: 2rem;
@@ -103,8 +141,8 @@ section {
 }
 
 .social-icons li a i:hover {
-    background-color: white;
-    color: darkgray;
+    background-color: #C9D4EB;
+    color: #929CB9;
 }
 
 .social-item span {
@@ -117,53 +155,37 @@ section {
     position:inherit !important;
 }
 
+.sub-title {
+    padding: 1rem;
+}
+
 .uppercase {
     text-transform: uppercase;
+}
+
+.vertical-centre {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 /* ************************************************************************* */
 /* ids                                                                       */
 /* ************************************************************************* */
 
+#home-page-img {
+    background-image: url("..\\media\\Gemini_Generated_Image_emk13demk13demk1.jpg");
+    max-width: 60%;
+    height: auto;
+    opacity: 0.2;
+    clip-path: circle(33%);
+}
+
 #nav {
     padding: 0;
     margin: 0;
-}
-
-#nav-item-1 {
-    background-color: cyan;
-    height: 2rem;
-}
-
-#nav-item-1 a {
-    color: magenta;
-}
-
-#nav-item-2 {
-    background-color: yellow;
-    height: 2rem;
-}
-
-#nav-item-2 a {
-    color: black;
-}
-
-#nav-item-3 {
-    background-color: magenta;
-    height: 2rem;
-}
-
-#nav-item-3 a {
-    color: cyan;
-}
-
-#nav-item-4 {
-    background-color: black;
-    height: 2rem;
-}
-
-#nav-item-4 a {
-    color: yellow;
 }
 
 /* ************************************************************************* */
@@ -202,3 +224,5 @@ section {
 /* This below media query applies styles for devices with a width */
 /* between 769px and 991px such as tablets in landscape mode */
 @media (min-width: 769px) and (max-width: 991px) {}
+
+/* colour hex-codes #C9D4EB, #DDB2B9, #929CB9, #BA97A9, #647491 */
