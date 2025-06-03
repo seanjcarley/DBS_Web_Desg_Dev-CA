@@ -25,9 +25,20 @@ footer {
     bottom: 0;
 }
 
+form {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+}
+
 header {
     background-color: #C9D4EB;
     flex: none;
+}
+
+hr {
+    max-width: 33%;
+    margin: 1rem auto !important; 
 }
 
 html, body {
@@ -77,6 +88,8 @@ section {
     padding: 1rem;
 }
 
+
+
 .image {
     position: relative;
 }
@@ -87,6 +100,10 @@ section {
     bottom: auto;
     background: rgba(0, 0, 0, 0.5);
     color: #DDB2B9;
+}
+
+.left-align {
+    text-align: left;
 }
 
 .navbar a {
@@ -113,6 +130,10 @@ section {
     position: fixed;
     background: rgba(255, 255, 255, 0.75);
     z-index: -99;
+}
+
+.review-body {
+    display: none;
 }
 
 .row {
@@ -187,6 +208,28 @@ section {
     padding: 0;
     margin: 0;
 }
+
+#cust_email,
+#cust_info,
+#cust_name,
+#cust_phone {
+    width: 75%;
+    margin: 1rem;
+}
+
+#cust_info {
+    min-height: 5rem;
+}
+
+#cust_newsletter {
+    margin: 1rem;
+}
+
+#cust_submit {
+    max-width: 50%;
+    margin: 1rem;
+}
+
 
 /* ************************************************************************* */
 /* @media queries */
