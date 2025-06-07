@@ -3,10 +3,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Page Description">
-        <title>Jo's Gentle Slumbers - Home Page</title>
+        <meta name="description" content="Holistic Infant Sleep Therapy - Overview">
+        <title>Jo's Gentle Slumbers - Holistic Infant Sleep Therapy</title>
         <!-- css -->
         <link rel="stylesheet" href="..\static\css\base.css">
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <!-- bootstrap css -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- bootstrap JS -->
@@ -15,12 +17,12 @@
         <script src="https://kit.fontawesome.com/3eced4d9b0.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <img id="home-page-img" src="..\static\media\Gemini_Generated_Image_emk13demk13demk1.jpg" alt="background">
         <header class="container-fluid">
-            <nav class="navbar navbar-expand-lg col-10 offset-1">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand uppercase nav-text" href="..\index\index.html">Jo's Gentle Slumbers</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <!-- <span class="navbar-toggler-icon"></span> -->
                         <i class="fa-solid fa-bars" aria-hidden="true"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -31,12 +33,12 @@
                                     <p class="my-0">Home</p>
                                 </a>
                             </li>
-                            <!-- <li class="nav-item centre">
+                            <li class="nav-item centre">
                                 <a href="#" class="nav-link">
                                     <i class="fa-solid fa-user" aria-hidden="true"></i>
                                     <p class="my-0">About</p>
                                 </a>
-                            </li> -->
+                            </li>
                             <li class="nav-item centre">
                                 <a href="..\testimonials\testimonials.html" class="nav-link">
                                     <i class="fa-solid fa-comments" aria-hidden="true"></i>
@@ -55,23 +57,17 @@
             </nav>
         </header>
         <section class="container-fluid">
-            <div class="container centre">
-                <img id="home-page-img" src="..\static\media\Gemini_Generated_Image_emk13demk13demk1.jpg" alt="background">
-                <div class="content vertical-centre">
+            <div class="container">
+                <div class="content">
                     <div class="row no-gutters">
-                        <div class="col-8 offset-2 sub-title">
+                        <div class="sub-title">
                             <h3 class="centre">Holistic Infant Sleep Therapy </h3>
-                            <h4 class="centre">Nurturing Rest for Your Little One</h4>
-                        </div>
-                    </div>
-                    <div class="row-no-gutters">
-                        <div class="col-8 offset-2"> 
-                            <h3 class="centre"></h3>
+                            <h4 id="sub-header" class="centre">Nurturing Rest for Your Little One</h4>
                         </div>
                     </div>
                     <div class="row no-gutters">
-                        <div class="col-8 offset-2">
-                            <p class="left-align">
+                        <div id="content" class="">
+                            <p class="">
                                 For many new parents, the quest for a good 
                                 night's sleep can feel elusive. While 
                                 traditional sleep training methods often focus 
@@ -82,7 +78,8 @@
                                 developmental as well as the family's unique 
                                 dynamics.
                             </p>
-                            <p class="left-align">
+                            <br/>
+                            <p class="">
                                 Unlike one-size-fits-all solutions, holistic 
                                 sleep therapy recognizes that every baby is 
                                 different and that sleep challenges can stem 
@@ -95,9 +92,20 @@
                         </div>
                     </div>
                     <div class="row no-gutters">
-                        <div class="col-8 offset-2">
-                            <button><- Previous</button>
-                            <button>Next -></button>
+                        <div class="about-btns">
+                            <button id="about-1" class="btn-about">Overview</button>
+                            <button id="about-2" class="btn-about">Principles</button>
+                            <button id="about-3" class="btn-about">How</button>
+                            <button id="about-4" class="btn-about">Benefits</button>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="">
+                            <p class="centre">
+                                <a href="..\contact\contact.html">
+                                    Click here to contact me.
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -105,9 +113,9 @@
         </section>
         <footer class="container-fluid">
             <div class="row">
-                <div class="col-md-5 offset-1 social">
+                <div class="social col">
                     <h5 class="footer-header">Follow Me on Social Media:</h5>
-                    <ul class="list-inline social-icons center">
+                    <ul class="list-inline social-icons centre">
                         <li class="list-inline-item social-item">
                             <a target="_blank" href="#">
                                 <i class="fa fa-facebook"></i>
@@ -128,7 +136,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-5 copyright">
+                <div class="copyright col">
                     <div class="row">
                         <div class="col centre">
                             <p>&COPY; Seán Carley</p>
@@ -142,5 +150,7 @@
                 </div>
             </div>
         </footer>
+        <script src="..\static\js\about.js"></script>
     </body>
 </html>
+                  

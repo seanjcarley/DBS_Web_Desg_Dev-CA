@@ -5,105 +5,69 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 /* ************************************************************************* */
-/* tags                                                                      */
-/* ************************************************************************* */
-
-a {
-    text-decoration: none !important;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    background-color: #DDB2B9;
-    max-height: 7.5rem;
-    position: fixed;
-    bottom: 0;
-}
-
-form {
-    margin: auto;
-    width: 75%;
-    text-align: center;
-}
-
-header {
-    background-color: #C9D4EB;
-    flex: none;
-}
-
-hr {
-    max-width: 33%;
-    margin: 1rem auto !important; 
-}
-
-html, body {
-    background-color: dimgray;
-    height: 100%;
-    width: 100%;
-}
-
-section {
-    background-color: #647491;
-    flex: auto;
-}
-
-/* ************************************************************************* */
 /* classes                                                                   */
 /* ************************************************************************* */
+.about-btns {
+    padding: 0;
+    width: 90vh;
+}
+
+.btn-about {
+    background-color: #C9D4EB;
+    color:#647491;
+    border-radius: 2rem;
+    border-style: none;
+    width: 20%;    
+}
 
 .centre {
     text-align: center;
 }
 
-.copyright {
-    color: #647491;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 1rem;
-}
-
 .container {
-    position: relative;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.container .content{
-    position: absolute;
+    align-items: center;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.0);
-    color: #DDB2B9;
+    color: #ddb2b9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 100%;
+    min-height: auto;
+    /* padding: 1rem; */
+    position: relative;
     width: 100%;
-    padding: 1rem;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.content {
+    align-items: center;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.0);
+    color: #ddb2b9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: auto;
+    width: 100%;
+}
+
+.copyright {
+    color: #647491;
+    display: none;
+    font-weight: 300;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .footer-header {
-    text-align: center;
     color: #647491;
     padding: 1rem;
-}
-
-
-
-.image {
-    position: relative;
-}
-
-.image page-content {
-    position: absolute;
-    top: 50;
-    bottom: auto;
-    background: rgba(0, 0, 0, 0.5);
-    color: #DDB2B9;
-}
-
-.left-align {
-    text-align: left;
+    text-align: center;
 }
 
 .navbar a {
@@ -120,24 +84,6 @@ section {
 
 .nav-text {
     font-weight: 700;
-}
-
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: rgba(255, 255, 255, 0.75);
-    z-index: -99;
-}
-
-.review-body {
-    display: none;
-}
-
-.row {
-    margin: 0;
 }
 
 .social {
@@ -180,13 +126,9 @@ section {
     padding: 1rem;
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
-
 .vertical-centre {
     margin: 0;
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -198,10 +140,10 @@ section {
 
 #home-page-img {
     background-image: url("..\\media\\Gemini_Generated_Image_emk13demk13demk1.jpg");
-    max-width: 60%;
-    height: auto;
-    opacity: 0.2;
     clip-path: circle(33%);
+    height: auto;
+    max-width: 100%;
+    opacity: 0.2;
 }
 
 #nav {
@@ -209,63 +151,108 @@ section {
     margin: 0;
 }
 
-#cust_email,
-#cust_info,
-#cust_name,
-#cust_phone {
-    width: 75%;
-    margin: 1rem;
+/* ************************************************************************* */
+/* tags                                                                      */
+/* ************************************************************************* */
+
+a {
+    text-decoration: none !important;
 }
 
-#cust_info {
-    min-height: 5rem;
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    width: 100%;
 }
 
-#cust_newsletter {
-    margin: 1rem;
+footer {
+    background-color: #ddb2b9;
+    bottom: 0;
+    flex: none;
+    max-height: 7.5rem;
 }
 
-#cust_submit {
-    max-width: 50%;
-    margin: 1rem;
+header {
+    background-color: #c9d4eb;
+    flex: none;
 }
 
+html {
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+
+}
+
+img {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+}
+
+p a {
+    text-decoration: none;
+    color: #C9D4EB;
+}
+
+p a:hover {
+    text-decoration: none;
+    color:#BA97A9
+}
+
+section {
+    background-color: #647491;
+    flex: 1 0 0;
+    margin: 0;
+    overflow-y: auto;
+}
 
 /* ************************************************************************* */
 /* @media queries */
 /* ************************************************************************* */
-
-/* This below media query applies styles for devices */
+/* The below media query applies styles for devices */
 /* with a maximum width of 600px such as mobile phones */
-@media (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+@media (max-width: 600px) {}
 
-    section {
-        min-height:76vh;
-        background-color: red;
-    }
-
-    .logo-div {
-        display: none;
-    }
-}
-
-/* This below media query applies styles for devices with a width */
+/* The below media query applies styles for devices with a width */
 /* between 601px and 768px such as tablets in portrait mode */
 @media (min-width: 601px) and (max-width: 768px) {
-    body {
-        background-color: lightgreen;
-    }
-    section {
-        min-height:76vh;
-        background-color: Blue;
+    .copyright {
+        display: block;
     }
 }
 
-/* This below media query applies styles for devices with a width */
+/* The below media query applies styles for devices with a width */
 /* between 769px and 991px such as tablets in landscape mode */
-@media (min-width: 769px) and (max-width: 991px) {}
+@media (min-width: 769px) and (max-width: 991px) {
+    .copyright {
+        display: block;
+    }
+}
 
-/* colour hex-codes #C9D4EB, #DDB2B9, #929CB9, #BA97A9, #647491 */
+/* The below media query applies styles for devices with a width */
+/* above 991px such as a laptop or desktop monitor */
+@media (min-width: 992px) {
+    .copyright {
+        display: block;
+    }
+
+    #home-page-img {
+        max-width: 70%;
+    }
+
+    img {
+        left: 15%;
+        top: 0;
+    }
+}
+
+/* ************************************************************************* */
+/* END */
+/* ************************************************************************* */

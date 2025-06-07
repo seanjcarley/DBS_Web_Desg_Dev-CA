@@ -7,6 +7,8 @@
         <title>Jo's Gentle Slumbers - Home Page</title>
         <!-- css -->
         <link rel="stylesheet" href="..\static\css\base.css">
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <!-- bootstrap css -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- bootstrap JS -->
@@ -43,12 +45,12 @@
                                     <p class="my-0">Testimonials</p>
                                 </a>
                             </li>
-                            <!-- <li class="nav-item">
+                            <li class="nav-item">
                                 <a href="#" class="nav-link centre">
                                     <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                                     <p class="my-0">Contact</p>
                                 </a>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -59,8 +61,12 @@
                 <img id="home-page-img" src="..\static\media\Gemini_Generated_Image_emk13demk13demk1.jpg" alt="background">
                 <div class="content vertical-centre">
                     <div class="row no-gutters">
-                        <div class="col-8 offset-2 sub-title">
+                        <div class="col-md-8 offset-md-2 offset-sm-1 col-sm-10 sub-title">
                             <h3 class="centre">I'm Here to Help</h3>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-8 offset-md-2 offset-sm-1 col-sm-10">
                             <p>
                                 If you would like to arrange an appointment, 
                                 or find out more information, please fill in 
@@ -70,32 +76,54 @@
                         </div>
                     </div>
                     <div class="row-no-gutters">
-                        <div class="col-8 offset-2"> 
+                        <div class="col-md-8 col-sm-10 offset-sm-1 offset-md-2"> 
                             <form action="">
-                                <fieldset>
-                                    <label for="cust_name">Name: </label>
-                                    <input class="form-element" type="text" name="cust_name" id="cust_name">
-                                </fieldset>
-                                <fieldset>
-                                    <label for="cust_email">Email: </label>
-                                    <input class="form-element" type="email" name="cust_email" id="cust_email" placeholder="name@example.com">
-                                    <label for="cust_email">Phone: </label>
-                                    <input type="tel" name="cust_phone" id="cust_phone" pattern="[0-9]{10}" placeholder="0851234567">
-                                </fieldset>
-                                <fieldset>
-                                    <label for="cust_info">Please provide a brief outline of your current situation below: </label>
-                                    <textarea class="form-element" name="cust_info" id="cust_info" maxlength="512" placeholder="max 512 characters"></textarea>
-                                </fieldset>
-                                <fieldset>
-                                    <label for="cust_newsletter">
-                                        Would you like to Subscribe to my Monthly 
-                                        Newsletter?
-                                    </label>
-                                    <input class="form-element" type="checkbox" name="cust_newsletter" id="cust_newsletter">
-                                </fieldset>
-                                <fieldset>
-                                    <input class="form-element" type="submit" value="Submit" id="cust_submit">
-                                </fieldset>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="cust_name">Name: </label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input class="form-element" type="text" name="cust_name" id="cust_name" placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="cust_email">Email: </label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input class="form-element" type="email" name="cust_email" id="cust_email" placeholder="name@example.com">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="cust_email">Phone: </label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="tel" name="cust_phone" id="cust_phone" pattern="[0-9]{10}" placeholder="0851234567">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <textarea class="form-element" name="cust_info" id="cust_info" maxlength="512" placeholder="max 512 characters"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="cust_newsletter">
+                                            Subscribe to Monthly Newsletter
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input class="form-element" type="checkbox" name="cust_newsletter" id="cust_newsletter">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input class="form-element center" type="submit" value="Submit" id="cust_submit">
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
