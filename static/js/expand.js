@@ -22,21 +22,18 @@ function expandTestimonial_1() {
         button2.style.display = "none";
         button3.style.display = "none";
         button4.style.display = "none";
-        // make all testimonial footers centre aligned
-        document.getElementById("rf1").className = "";
-        document.getElementById("rf2").className = "";
-        document.getElementById("rf3").className = "";
-        document.getElementById("rf4").className = "";
+        //make all testimonial footers centre aligned
+        document.getElementById("rf1").classList.add("centre");
+        document.getElementById("rf2").classList.add("centre");
+        document.getElementById("rf3").classList.add("centre");
+        document.getElementById("rf4").classList.add("centre");
     } else {  // if not show it
         button1.style.display = "block";
         button2.style.display = "none";
         button3.style.display = "none";
         button4.style.display = "none";
         // left align the active testimonial footer
-        document.getElementById("rf1").classList.add("left-align");
-        document.getElementById("rf2").className = "";
-        document.getElementById("rf3").className = "";
-        document.getElementById("rf4").className = "";
+        document.getElementById("rf1").classList.remove("centre");
     }
 }
 
@@ -55,20 +52,17 @@ function expandTestimonial_2() {
         button3.style.display = "none";
         button4.style.display = "none";
         // make all testimonial footers centre aligned
-        document.getElementById("rf1").className = "";
-        document.getElementById("rf2").className = "";
-        document.getElementById("rf3").className = "";
-        document.getElementById("rf4").className = "";
+        document.getElementById("rf1").classList.add("centre");
+        document.getElementById("rf2").classList.add("centre");
+        document.getElementById("rf3").classList.add("centre");
+        document.getElementById("rf4").classList.add("centre");
     } else {  // if not show it
         button1.style.display = "none";
         button2.style.display = "block";
         button3.style.display = "none";
         button4.style.display = "none";
         // left align the active testimonial footer
-        document.getElementById("rf1").className = "";
-        document.getElementById("rf2").classList.add("left-align");
-        document.getElementById("rf3").className = "";
-        document.getElementById("rf4").className = "";
+        document.getElementById("rf2").classList.remove("centre");
     }
 }
 
@@ -87,20 +81,17 @@ function expandTestimonial_3() {
         button3.style.display = "none";
         button4.style.display = "none";
         // make all testimonial footers centre aligned
-        document.getElementById("rf1").className = "";
-        document.getElementById("rf2").className = "";
-        document.getElementById("rf3").className = "";
-        document.getElementById("rf4").className = "";
+        document.getElementById("rf1").classList.add("centre");
+        document.getElementById("rf2").classList.add("centre");
+        document.getElementById("rf3").classList.add("centre");
+        document.getElementById("rf4").classList.add("centre");
     } else {  // if not show it
         button1.style.display = "none";
         button2.style.display = "none";
         button3.style.display = "block";
         button4.style.display = "none";
         // left align the active testimonial footer
-        document.getElementById("rf1").className = "";
-        document.getElementById("rf2").className = "";
-        document.getElementById("rf3").classList.add("left-align");
-        document.getElementById("rf4").className = "";
+        document.getElementById("rf3").classList.remove("centre");
     }
 }
 
@@ -119,20 +110,17 @@ function expandTestimonial_4() {
         button3.style.display = "none";
         button4.style.display = "none";
         // make all testimonial footers centre aligned
-        document.getElementById("rf1").className = "";
-        document.getElementById("rf2").className = "";
-        document.getElementById("rf3").className = "";
-        document.getElementById("rf4").className = "";
+        document.getElementById("rf1").classList.add("centre");
+        document.getElementById("rf2").classList.add("centre");
+        document.getElementById("rf3").classList.add("centre");
+        document.getElementById("rf4").classList.add("centre");
     } else {  // if not show it
         button1.style.display = "none";
         button2.style.display = "none";
         button3.style.display = "none";
         button4.style.display = "block";
         // left align the active testimonial footer
-        document.getElementById("rf1").className = "";
-        document.getElementById("rf2").className = "";
-        document.getElementById("rf3").className = "";
-        document.getElementById("rf4").classList.add("left-align");
+        document.getElementById("rf4").classList.remove("centre");
     }
 }
 

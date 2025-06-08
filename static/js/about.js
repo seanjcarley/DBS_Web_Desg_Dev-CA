@@ -27,7 +27,7 @@ var about_1 = `<p class="">
     restful nights.
     </p>`
 
-var about_2 = `<table class ="left-align">
+var about_2 = `<table class ="">
         <tbody>
         <tr>
             <th>Attachment-Centered: </th>
@@ -76,7 +76,7 @@ var about_2 = `<table class ="left-align">
         </tbody>
     </table>`
 
-var about_3 = `<table class ="left-align">
+var about_3 = `<table class ="">
         <tbody>
         <tr>
             <th>In-depth Intake: </th>
@@ -101,7 +101,7 @@ var about_3 = `<table class ="left-align">
         </tbody>
     </table>`
 
-var about_4 = `<ul class="list-about">
+var about_4 = `<ul class="list-about centre">
     <li>Sustainable Sleep Solutions</li>
     <li>Stronger Parent-Child Bond</li>
     <li>Reduced Parental Stress</li>

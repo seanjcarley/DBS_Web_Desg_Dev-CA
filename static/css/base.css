@@ -8,8 +8,8 @@
 /* classes                                                                   */
 /* ************************************************************************* */
 .about-btns {
-    padding: 0;
-    width: 90vh;
+    padding: 1.5rem;
+    width: 50vh !important;
 }
 
 .btn-about {
@@ -20,8 +20,26 @@
     width: 20%;    
 }
 
+.btn-testimonials {
+    background-color: #C9D4EB;
+    color:#647491;
+    border-radius: 2rem;
+    border-style: none;
+    width: 100%;    
+}
+
 .centre {
     text-align: center;
+}
+
+.col-25, 
+.col-75,
+.col-100,
+input,
+textarea {
+    float: left;
+    padding: 0;
+    width: 100% !important;
 }
 
 .container {
@@ -64,10 +82,31 @@
     text-align: center;
 }
 
+.fa-bars {
+    color: #BA97A9;
+}
+
 .footer-header {
     color: #647491;
     padding: 1rem;
     text-align: center;
+}
+
+.form-col {
+    margin: 1rem;
+}
+
+.legend-col {
+    margin: 1rem;
+}
+
+.list-about {
+    list-style: none;
+    padding: 1.0rem;
+}
+
+.list-about li {
+    padding: 0.75rem;
 }
 
 .navbar a {
@@ -78,12 +117,24 @@
     color: #647491;
 }
 
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.0 !important;
+}
+
 .nav-item {
     list-style-type: none;
 }
 
 .nav-text {
     font-weight: 700;
+}
+
+.review-body {
+    display: none;
+}
+
+.row {
+    margin-right: 0 !important;
 }
 
 .social {
@@ -213,6 +264,12 @@ section {
     overflow-y: auto;
 }
 
+tr {
+    border-width: 0.1px !important;
+    border-color: #DDB2B9 !important;
+    border-style: solid !important;
+}
+
 /* ************************************************************************* */
 /* @media queries */
 /* ************************************************************************* */
@@ -223,24 +280,72 @@ section {
 /* The below media query applies styles for devices with a width */
 /* between 601px and 768px such as tablets in portrait mode */
 @media (min-width: 601px) and (max-width: 768px) {
+    /* .col-25 {
+        width: 25% !important;
+    }
+
+    .col-75 {
+        width: 75% !important;
+    } */
+   
     .copyright {
         display: block;
+    }
+
+    .form-col {
+        margin: 0.5rem;
+    }
+
+    .legend-col {
+        margin: 0.5rem;
     }
 }
 
 /* The below media query applies styles for devices with a width */
 /* between 769px and 991px such as tablets in landscape mode */
 @media (min-width: 769px) and (max-width: 991px) {
+    /* .col-25 {
+        width: 25% !important;
+    }
+
+    .col-75 {
+        width: 75% !important;
+    } */
+    
     .copyright {
         display: block;
+    }
+
+    .form-col {
+        margin: 0.5rem;
+    }
+
+    .legend-col {
+        margin: 0.5rem;
     }
 }
 
 /* The below media query applies styles for devices with a width */
 /* above 991px such as a laptop or desktop monitor */
 @media (min-width: 992px) {
+    /* .col-25 {
+        width: 25% !important;
+    }
+
+    .col-75 {
+        width: 75% !important;
+    } */
+    
     .copyright {
         display: block;
+    }
+    
+    .form-col {
+        margin: 0.5rem;
+    }
+
+    .legend-col {
+        margin: 0.5rem;
     }
 
     #home-page-img {
